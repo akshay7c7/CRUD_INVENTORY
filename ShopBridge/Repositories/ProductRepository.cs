@@ -43,7 +43,6 @@ namespace ShopBridge.Repositories
         public async Task<Product> ModifyProduct(int id, Product product)
         {
             var productToUpdate = await _dataContext.Products.FirstOrDefaultAsync(x=>x.ProductId==id);
-
             productToUpdate.ProductName = product.ProductName;
             productToUpdate.Description = product.Description;
             productToUpdate.Price = product.Price;

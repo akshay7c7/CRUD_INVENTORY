@@ -54,6 +54,11 @@ namespace ShopBridge.Controllers
         public async Task<IActionResult> UpdateProduct(int id, [FromBody]Product product)
         {
             var result = await _repo.ModifyProduct(id, product);
+            
+            if(product.Description.Length<10)
+            {
+                return BadRequest("Description should be atleast 10 letters long");
+            }
             return Ok(result);
         }
 
