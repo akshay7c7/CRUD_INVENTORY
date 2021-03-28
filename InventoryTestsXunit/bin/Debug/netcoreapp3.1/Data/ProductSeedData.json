@@ -1,0 +1,43 @@
+[
+    {
+        
+        "ProductName" : "Wooden Table",
+        "Description": "This is a sample description regarding Table",
+        "Price":489
+
+    },
+    {
+        
+        "ProductName" : "Steel Chair",
+        "Description": "This is a sample description regarding Chair",
+        "Price":949
+    }
+    ,
+    {
+        
+        "ProductName" : "Refrigerator",
+        "Description": "This is a sample description regarding Refrigerator",
+        "Price":3000
+    }
+    ,
+    {
+        
+        "ProductName" : "Tv BOX",
+        "Description": "This is a sample description regarding TV BOX",
+        "Price":1200
+    }
+    ,
+    {
+        
+        "ProductName" : "Oven",
+        "Description": "This is a sample description regarding Oven",
+        "Price":3200
+    }
+    ,
+    {
+        
+        "ProductName" : "Cheetah cover Sofa",
+        "Description": "This is a sample description regarding sofa",
+        "Price":600
+    }
+]
