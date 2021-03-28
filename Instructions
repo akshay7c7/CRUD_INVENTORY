@@ -1,0 +1,47 @@
+Pre requisites ==> Visual Studio Code with .NET core 3.1+, SQL Express(should be running), SQL server Management Studio(to check the db)
+
+1. Open VS code => Go to files => Open Folder . And Select a blank folder where you want to open this project.
+
+2. Now Open terminal and give command => "git clone https://github.com/akshay7c7/CRUD_INVENTORY.git".
+    This will clone project in your blank folder. 
+    
+3. Change path in terminal to "ShopBridge" folder and hit "dotnet restore" and then hit "dotnet watch run" to run the project.
+   Database will automatically get created in "Inventory" db in your SQL management Studio and values will be seeded automatically in it thru ORM.
+   
+   Open Postman and run check apis.
+   
+   1. Get=> https://localhost:5000/api/Inventory/getproductlist
+   
+   2. Post=> https://localhost:5000/api/Inventory/createProduct        
+              {
+                    "productName": "New Furniture Set",
+                    "description": "This is a sample description regarding Furniture set",
+                    "price": 600
+               }
+               
+   3. Put=> https://localhost:5000/api/Inventory/updateproduct/3
+              {
+                    "productName": "New Furniture 3",
+                    "description": "This is a sample description regarding Furniture set",
+                    "price": 600
+               }
+               
+   4. Delete=> https://localhost:5000/api/Inventory/deleteproduct/3
+   
+4. Now in Visual studio navigate to InventoryTestsXunit folder and hit "dotnet restore".
+
+5. Run all the test through Test Runner or click on "Run All Tests" link just above class "ProductLists"
+
+Time Spent =>
+  Data Store design - 1hr
+  API and service logic - 1hr
+  Unit Test - 30 mins
+  
+ Detais =>
+  .NET Core v - 3.1
+  ORM used - Entity Framework core
+  DB - SQL SERVER
+  
+  Comments => Have covered Model Validation, Simple exception, async operations, Unit Testing, Dependency Inversion. 
+  
+
